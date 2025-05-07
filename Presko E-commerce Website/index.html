@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presko</title>
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<main>
+
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/Presko.logo.png" width="150px">
+                </div>
+
+                <!-- Categories link (positioned next to logo) -->
+
+                <div class="category">
+                    <a href="">Categories</a>
+                </div>
+
+                <!-- Navigation links -->
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#footer">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        
+                        
+                    </ul>
+                
+                </nav>
+                
+                <button id="loginBtn">Account</button>
+
+                <!-- Cart Icon -->
+                <img src="img/cart-icon.svg" width="30px" height="30px">
+            </div>
+            <section class="hero">
+
+
+                <div class="hero-video-container">
+                    <video autoplay loop muted plays-inline class="background-clip">
+                        <source src="img/Farmers Working Stock Video _ Free Stock Videos.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero-overlay">
+                        <h1>Presko:</h1>
+                        <p>“Sparking a revolution for farmers and fishermen to reach new heights.”</p>
+                        <a href="" class="btn">Find Market &#8594;</a>
+                    </div>
+                </div>
+
+                <!--login popup-->
+
+                <div id="loginModal" class="modal">
+                    <div class="wrapper">
+                        <form action="">
+                            <span class="close-btn">&times;</span>
+                            <h1>Login</h1>
+                            
+            
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+            
+                            </div>
+            
+                            <div class="input-box">
+                                <input type="password" id="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt' ></i>   
+                                   
+                            </div>
+            
+                            <label><input type="checkbox" id="showPassword" onchange="togglePassword()">Show password</label>
+            
+                            <script> 
+                                function togglePassword(){
+                                    var password= document.getElementById("password");
+                                    var checkbox= document.getElementById("showPassword");
+                                
+                                    if(checkbox.checked){
+                                        password.type = "text";
+                                    }
+                                    else {
+                                        password.type = "password";
+                                    }
+                                }
+                            </script>
+            
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                        
+                            <button type="submit" class="btn">Login</button>
+            
+                            <div class="register-link">
+                                <p>Don't have an account? <a href="#">Register Now!</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    
+                
+                
+
+
+
+
+
+            </section>
+        </div>
+        </div>
+
+        <main>
+
+        </main>
+        <footer id="Footer">
+            <p>&copy; 2024 Presko</p>
+            <h4>INFORMATION</h4>
+            <ul class="footer-links">
+                <li><a href="#about">About us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Shipping Guide</a></li>
+                <li><a href="#">Customer Services</a></li>
+            </ul>
+        </footer>
+
+    </body>
+
+</html>
