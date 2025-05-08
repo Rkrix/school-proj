@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
   }
   
   body {
-    background: radial-gradient(beige, olive);
+    background: radial-gradient(rgb(255, 255, 255), rgb(85, 85, 2));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@
     width: 100%;
     max-width: 400px;
     margin: 40px 0;
-    border: 1px solid #a8a7a7;
+    border: 3px solid #ffffff;
   }
   
   .signup-container h2 {
@@ -70,7 +70,7 @@
   .form-group input {
     width: 100%;
     padding: 12px 14px;
-    border: 1px solid #f8f8f8;
+    border: 2px solid #f8f8f8;
     border-radius: 8px;
     font-size: 16px;
     transition: border 0.3s;
