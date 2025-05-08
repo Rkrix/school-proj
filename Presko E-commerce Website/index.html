@@ -31,69 +31,70 @@
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#footer">About</a></li>
                         <li><a href="">Contact</a></li>
-                        
+                        <li><a href="#" class="button" id="button">Account</a></li>
                         
                     </ul>
                 
                 </nav>
-                
-                <button id="loginBtn">Account</button>
 
                 <!-- Cart Icon -->
                 <img src="img/cart-icon.svg" width="30px" height="30px">
             </div>
-                <!--login popup-->
+                
+            
+            <!--login popup-->
 
-                <div id="loginModal" class="modal">
-                    <div class="wrapper">
-                        <form action="">
-                            <span class="close-btn">&times;</span>
-                            <h1>Login</h1>
-                            
-            
-                            <div class="input-box">
-                                <input type="text" placeholder="Username" required>
-                                <i class='bx bxs-user'></i>
-            
-                            </div>
-            
-                            <div class="input-box">
-                                <input type="password" id="password" placeholder="Password" required>
-                                <i class='bx bxs-lock-alt' ></i>   
-                                   
-                            </div>
-            
-                            <label><input type="checkbox" id="showPassword" onchange="togglePassword()">Show password</label>
-            
-                            <script> 
-                                function togglePassword(){
-                                    var password= document.getElementById("password");
-                                    var checkbox= document.getElementById("showPassword");
-                                
-                                    if(checkbox.checked){
-                                        password.type = "text";
-                                    }
-                                    else {
-                                        password.type = "password";
-                                    }
-                                }
-                            </script>
-            
-                            <div class="remember-forgot">
-                                <label><input type="checkbox">Remember me</label>
-                                <a href="#">Forgot password?</a>
-                            </div>
-                        
-                            <button type="submit" class="btn">Login</button>
-            
-                            <div class="register-link">
-                                <p>Don't have an account? <a href="#">Register Now!</a></p>
-                            </div>
-                        </form>
+         <div class="popup">
+            <div class="popup-content">
+                <form action="">
+                    <span class="close-btn">&times;</span>
+                    <h1>Login</h1>
+                    
+    
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+    
                     </div>
-                </div>
+    
+                    <div class="input-box">
+                        <input type="password" id="password" placeholder="Password" required/>
+                        
+                        
+                           
+                    </div>
+                    <div class="showPassword">
+                        <label><input type="checkbox" id="showPassword" onchange="togglePassword()">Show password</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <script> 
+                        function togglePassword(){
+                            var password= document.getElementById("password");
+                            var checkbox= document.getElementById("showPassword");
+                        
+                            if(checkbox.checked){
+                                password.type = "text";
+                            }
+                            else {
+                                password.type = "password";
+                            }
+                        }
+                    </script>
+    
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                
+                    <button type="submit" class="button">Login</button>
+    
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="signup.html">Register Now!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
                     
         </div>
         </div>
@@ -150,7 +151,17 @@
                 <li><a href="#">Customer Services</a></li>
             </ul>
         </footer>
+        
+                <script>
+            document.getElementById("button").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "flex"; 
+            })
 
+            document.querySelector(".close-btn").addEventListener("click", function(){
+                document.querySelector(".popup").style.display = "none";
+            })
+        </script>
+        
     </body>
 
 </html>
