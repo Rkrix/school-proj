@@ -180,181 +180,174 @@ html {
 
 /*login form*/
 
-.close-btn {
-  color: #aaa;
+.popup {
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 10px; right: 15px;
-  font-size: 30px;
-  cursor: pointer;
-  
-  
-}
-.close-btn:hover {
-  color: #fff;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.wrapper {
+
+.popup-content {
   width: 420px;
+  height: 500px;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 100px rgba(0, 0, 0, .2);
   color: #fff;
   border-radius: 15px;
   padding: 30px 30px;
   position: absolute;
-  top: -150%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)scale(1.25);
-
+  transform: translate(-50%, -50%);
+  
+  
+}
+.close-btn {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 30px;
+  
 
   
 }
-
-.wrapper h1 {
-  font-size: 36px;
-  text-align: center;
-  text-shadow: 1px 1px #3a3838;
-
+.close-btn:hover {
+  color: #776c6c;
+  cursor: pointer;
 }
 
-.wrapper .input-box {
+.popup-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 2px 2px olive;
+}
+
+.input-box {
   position: relative;
   width: 100%;
   height: 50px;
   margin: 30px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
   border-radius: 40px;
-  border: #333;
+  display: flex;
+  flex-direction: row;
+  
+  
 }
 
 .input-box input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(39, 37, 37, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  padding: 20px 45px 20px 20px;
   
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(39, 37, 37, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 20px 45px 20px 20px;
+    
+
 }
 
 .input-box input::placeholder {
-  color: rgb(252, 252, 252);
+  color: rgb(214, 211, 211);
 
 }
 
-.input-box i {
+.input-box button {
   position: absolute;
-  right: 20px;
   top: 50%;
+  right: 10px;
   transform: translateY(-50%);
-  font-size: 20px;
-  text-shadow: 1px 1px #3a3838;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.input-box a {
-  color:  rgb(255, 255, 255);
-  position: absolute;
-  left: 20px;
-  top: 125%;
-  transform: translateY(-50%);
-  font-size: 13px;
- text-decoration: underline;
+.showPassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -20px;
 }
 
-label {
-  color: rgb(255, 255, 255);
+.showPassword a {
+  color: #fff;
+  text-decoration: underline;
+
+}
+
+.showPassword a:hover {
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+ label {
+  color: #f2f2f2;
   font-size: 14.5px;
-  font-weight: 300;
   letter-spacing: 1px;
-  
   
 }
 
 label input {
-  margin-right: 5px;
+  margin-right: 3px;
   accent-color: #fff;
 }
 
-.input-box a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #fff;
 
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
 }
 
-.wrapper .remember-forgot {
+.popup-content .remember-forgot {
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 30px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.remember-forgot label input {
-  accent-color: #fff;
-  margin-right: 5px;
-}
-
-.remember-forgot a {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-  letter-spacing: 1px;
-  margin-left: 100px;
-  margin-bottom: 100px;
-  font-size: 13px;
-
-}
-
-.remember-forgot label {
-  color:  rgb(255, 255, 255);
-  margin-top: 30px;
-  letter-spacing: 1px;
   
 }
 
-.remember-forgot a:hover {
-  text-decoration:underline;
-  color: rgb(174, 190, 244);
+.remember-forgot label {
+  color:  #f2f2f2;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  margin-left: 125px;
 }
 
-.wrapper .btn {
-  width: 100%;
-  height: 45px;
-  background: #fff;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  font-weight: 600;
-}
 
-.wrapper button {
+ button {
   font-size: 18px;
   letter-spacing: 2px;
+  width: 100%;
   text-transform:none;
   display: inline-block;
   text-align: center;
   font-weight:bold ;
   padding: 0.7em 2em;
+  border: none;
   border-radius: 40px;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: rgb(174, 190, 244);
+  color: rgb(18, 18, 19);
   text-decoration: none;
   transition: 0.3s ease all;
   z-index: 1;
 }
 
-.wrapper button:before {
+ button:before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0;
@@ -363,46 +356,47 @@ label input {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: rgb(174, 190, 244);
+  background-color: rgb(230, 193, 144);
   z-index: -1;
   border-radius: 40px;
 }
 
-.wrapper button:hover, .wrapper button:focus {
+ button:hover,  button:focus {
   color: #fff;
 }
 
-.wrapper button:hover:before, button:focus:before {
+button:hover:before, button:focus:before {
   transition: 0.5s all ease;
   left: 0;
   right:0;
   opacity: 1;
 }
 
-.wrapper button:active {
+button:active {
   transform: scale(0.9);
 }
 
-.wrapper .register-link {
-  font-size: 14.5px;
+.register-link {
+  margin-top: 25px;
+  display: flex;
   text-align: center;
-  margin:20px 0  15px;
-}
-
-.register-link p a {
-  color:  #FFF;
-  text-decoration: none;
-  font-weight: 600;
-
-}
-
-.register-link p a:hover {
-  text-decoration: underline;
-  color: rgb(174, 190, 244);
+  justify-content: center;
 }
 
 .register-link p {
-  color:  #FFF;
+  color: #fff;
+  letter-spacing: 0.5px;
+
+}
+
+.register-link a {
+  color: rgb(253, 253, 255);
+  text-decoration: underline;
+}
+
+.register-link a:hover {
+  font-weight: 600;
+  color: antiquewhite;
 }
 
 
