@@ -246,7 +246,7 @@ p{
 }
 
 .showPassword a:hover {
-  color: antiquewhite;
+  color: #776c6c;
   font-weight: 600;
 }
 
@@ -313,7 +313,7 @@ label input {
   bottom: 0;
   opacity: 0;
   content: '';
-  background-color: rgb(230, 193, 144);
+  background-color: #776c6c;
   z-index: -1;
   border-radius: 40px;
 }
@@ -353,36 +353,11 @@ button:active {
 
 .register-link a:hover {
   font-weight: 600;
-  color: antiquewhite;
+  color: #776c6c;
 }
 
 
-/* about us css */
-html {
-  scroll-behavior: smooth;
-}
 
-.about-us-container {
-  padding: 25px 25px 25px 25px;
-  max-width: 100%;
-  margin: 0;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  background-color: beige;
-}
-
-.about-us-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #000000;
-}
-
-.about-us-container p {
-  font-size: 1.2rem;
-  color: #000000;
-  line-height: 1.6;
-}
 
 
 
