@@ -35,27 +35,7 @@ body{
   color: #776c6c;
 }
 
-.navbar button{
-  background-color: transparent;
-  border: none;
-  padding: 25px 10px 25px 10px;
-  margin-right: 25px;
-  font-size: large;
-  padding-top: 25px;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  text-transform: none;
-  text-decoration: none;
-  
-} 
 
-.navbar button:hover {
-  color: #776c6c;
-}
-
-.navbar button:active {
-  text-transform: none;
-}
 
 nav{
     flex: 1;
@@ -128,6 +108,8 @@ p{
 }
 
 
+
+
 .content h1 p{
     font-size: 50px;
     line-height: 90px;
@@ -151,34 +133,9 @@ p{
 }
 /* category form css */
 
-/* about us css */
-html {
-  scroll-behavior: smooth;
-}
-
-.about-us-container {
-  padding: 25px 25px 25px 25px;
-  max-width: 100%;
-  margin: 0;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  background-color: beige;
-}
-
-.about-us-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #000000;
-}
-
-.about-us-container p {
-  font-size: 1.2rem;
-  color: #000000;
-  line-height: 1.6;
-}
 
 /*login form*/
+
 
 .popup {
   background: rgba(0,0,0,0.6);
@@ -400,6 +357,35 @@ button:active {
 }
 
 
+/* about us css */
+html {
+  scroll-behavior: smooth;
+}
+
+.about-us-container {
+  padding: 25px 25px 25px 25px;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  background-color: beige;
+}
+
+.about-us-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.about-us-container p {
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
+
   footer {
     background-color: #101010;
     color: #fff;
@@ -452,4 +438,14 @@ button:active {
   .footer-social a:hover {
     background-color: #f39c12;
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .hero-video-container video {
+      display: none;
+    }
+    .hero-video-container {
+      background: url('img/Farmers Working Stock Video _ Free Stock Videos.mp4') no-repeat center center;
+      background-size: cover;
+    }
   }

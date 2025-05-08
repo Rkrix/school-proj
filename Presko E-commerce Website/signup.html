@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="navbar">
+      
+      <div class="logo">
+          <img src="img/Presko.logo.png" width="250px">
+      </div>
+
+  
+    
+  </header>
+  
+  <div class="signup-container">
+    <h2>Create an Account</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password" required />
+          <button type="button" class="toggle-password" onclick="togglePassword('password')">Show</button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="confirmPassword" name="confirmPassword" required />
+          <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword')">Show</button>
+        </div>
+      </div>
+      
+       <script>
+        function togglePassword(fieldId) {
+          const input = document.getElementById(fieldId);
+          const toggleBtn = input.nextElementSibling;
+        
+          if (input.type === "password") {
+            input.type = "text";
+            toggleBtn.textContent = "Hide";
+          } else {
+            input.type = "password";
+            toggleBtn.textContent = "Show";
+          }
+        }
+        </script> 
+
+        <div class="form-group">
+          <label for="role">Account type:</label>
+          <select id="role" name="role" required>
+            <option value="">Select an option</option>
+            <option value="customer">Customer</option>
+            <option value="vendor">Vendor</option>
+          </select>
+        </div>
+        
+        
+  
+      <button type="submit" class="signup-btn">Sign Up</button>
+  
+      <div class="login-link">
+        Already have an account? <a href="index.html">Log in</a>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Presko</p>
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Shipping Guide</a>
+        <a href="#">Customer Services</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
