@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
   
   body {
@@ -46,14 +46,16 @@
     width: 100%;
     max-width: 400px;
     margin: 40px 0;
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
   }
   
   .signup-container h2 {
+    font-family: "Poppins", sans-serif;
     text-align: center;
     margin-bottom: 24px;
     color: #fff;
-    font-size: 28px;
+    font-size: 36px;
+    text-shadow: 2px 2px olive;
   }
   
   .form-group {
@@ -63,23 +65,28 @@
   .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 600;
     color: #fff;
+    text-shadow: 0 0 5px rgb(53, 51, 51);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    
   }
   
   .form-group input {
     width: 100%;
     padding: 12px 14px;
-    border: 2px solid #f8f8f8;
+    border: 2px solid #ababab;
     border-radius: 8px;
     font-size: 16px;
     transition: border 0.3s;
-    background: transparent;
-    color: #fff;
+    background: rgb(244, 241, 241);
+    backdrop-filter: blur(50px);
+    color: #424040;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2)
   }
   
   .form-group input:focus {
-    border-color: #000000;
+    border: 2px solid rgb(61, 56, 56);
     outline: none;
   }
 
@@ -108,30 +115,36 @@
     color: #0a0a0a;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 25px;
   }
   
   .signup-btn:hover {
-    background: rgb(230, 193, 144);
+    background: #776c6c;
+    color: white;
   }
   
   .login-link {
     text-align: center;
     margin-top: 16px;
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
   }
   
   .login-link a {
-    color: #4f46e5;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
+    font-size: 17px;
   }
   
   .login-link a:hover {
     text-decoration: underline;
+    color: #776c6c;
   }
   .password-wrapper {
     position: relative;
@@ -144,16 +157,17 @@
   
   .toggle-password {
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: #ffffff;
-    font-weight: 600;
+    color: #776c6c;
+    font-weight: 400;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0;
+    letter-spacing: 0.5px;
   }
   
   .toggle-password:hover {
@@ -194,4 +208,3 @@
   .footer-links a:hover {
     color: #4f46e5;
   }
-  
